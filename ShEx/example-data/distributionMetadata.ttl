@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdp-o: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
+@prefix lang: <http://id.loc.gov/vocabulary/iso639-1/> .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/distribution/gda-lumc-sparql> dcterms:title "GDA lumc SPARQL endpoint" ;
+	rdfs:label "GDA lumc SPARQL endpoint" ;
+	dcterms:hasVersion "1.0" ;
+	fdp-o:metadataIssued "2017-02-21T09:37:34.278Z"^^xsd:dateTime ;
+	fdp-o:metadataIdentifier <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/distribution-gda-lumc-sparql-metadataID> ;
+    fdp-o:metadataModified "2017-02-21T09:37:34.278Z"^^xsd:dateTime ;
+	dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+	dcterms:isPartOf <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/dataset/gene-disease-association-lumc> ;
+	a dcat:Distribution ;
+	dcat:accessURL <http://triplestore.fair-dtls.vm.surfsara.nl:8890/sparql> ;
+	dcterms:issued "2016-05-27T10:16:21+00:00"^^xsd:dateTime ;
+	dcterms:modified "2016-05-27T10:16:21+00:00"^^xsd:dateTime ;
+	dcat:mediaType "text/html" .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/distribution-gda-lumc-sparql-metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+	dcterms:identifier "gda-lumc-sparql-metadataID" .
+
+
