@@ -26,6 +26,7 @@ PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/>
   dcat:byteSize xsd:decimal*;                            
   dcterms:modified xsd:dateTime*;
   dcterms:rights IRI*; 
+  dcterms:conformsTo IRI*;
   dcterms:license IRI;
   (dcat:downloadURL IRI | dcat:accessURL IRI);         
   fdp-o:metadataIdentifier @:metadataID             

@@ -21,7 +21,8 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
   fdp-o:metadataIssued xsd:dateTime;
   fdp-o:metadataModified xsd:dateTime;    
   dcterms:issued xsd:dateTime*;
-  dcterms:language IRI;
+  dcterms:language IRI*;
+  dcterms:conformsTo IRI*;
   dcterms:publisher @:agent+;
   dcterms:rights IRI*;              
   dcat:landingPage IRI*;
