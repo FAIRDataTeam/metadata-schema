@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdp-o: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
+@prefix lang: <http://id.loc.gov/vocabulary/iso639-1/> .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp> dcterms:title "FDP of fdp-demo.fair-dtls.surf-hosted.nl" ;
+	rdfs:label "FDP of fdp-demo.fair-dtls.surf-hosted.nl" ;
+	dcterms:hasVersion "1.0" ;
+	fdp-o:metadataIssued "2017-02-21T09:36:18.084Z"^^xsd:dateTime ;
+	fdp-o:metadataIdentifier <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/metadataID> .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/metadataID> a <http://purl.org/spar/datacite/ResourceIdentifier> ;
+	dcterms:identifier "fdp-metadataID" .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp> fdp-o:metadataModified "2017-02-21T09:36:18.087Z"^^xsd:dateTime ;
+	dcterms:language lang:en ;
+	dcterms:publisher <http://dtls.nl> .
+
+<http://dtls.nl> a <http://xmlns.com/foaf/0.1/Organization> ;
+	<http://xmlns.com/foaf/0.1/name> "DTLS" .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp> dcterms:description "FDP of fdp-demo.fair-dtls.surf-hosted.nl" ;
+	dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+	a r3d:Repository ;
+	rdfs:seeAlso <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/swagger-ui.html> ;
+	r3d:repositoryIdentifier <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/repoID> .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/repoID> a <http://purl.org/spar/datacite/ResourceIdentifier> ;
+	dcterms:identifier "fdp-repoID" .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp> r3d:institutionCountry <http://lexvo.org/id/iso3166/NL> ;
+	r3d:dataCatalog <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/catalog/patient-registry> , <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/catalog/transcriptomics> , <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/catalog/biobank> , <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/catalog/textmining> , <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/catalog/comparativeGenomics> ;
+	r3d:institution <http://dtls.nl> .
