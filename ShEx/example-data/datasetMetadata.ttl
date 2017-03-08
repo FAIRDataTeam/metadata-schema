@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdp-o: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
+@prefix lang: <http://id.loc.gov/vocabulary/iso639-1/> .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/dataset/gene-disease-association-lumc> dcterms:title "Gene disease association (LUMC)" ;
+	rdfs:label "Gene disease association (LUMC)" ;
+	dcterms:hasVersion "1.0" ;
+	fdp-o:metadataIssued "2017-02-21T09:37:34.066Z"^^xsd:dateTime ;
+	fdp-o:metadataIdentifier <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/dataset-gene-disease-association-lumc-metadataID> .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/dataset-gene-disease-association-lumc-metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+	dcterms:identifier "gene-disease-association-lumc-metadataID" .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/dataset/gene-disease-association-lumc> fdp-o:metadataModified "2017-02-21T09:37:34.066Z"^^xsd:dateTime ;
+	dcterms:language lang:en ;
+	dcterms:publisher <http://biosemantics.humgen.nl> .
+
+<http://biosemantics.humgen.nl> a <http://xmlns.com/foaf/0.1/Organization> ;
+	<http://xmlns.com/foaf/0.1/name> "Biosemantics LUMC" .
+
+<http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/dataset/gene-disease-association-lumc> dcterms:description "Gene disease association dataset from LUMC" ;
+	dcterms:isPartOf <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/catalog/textmining> ;
+	a dcat:Dataset ;
+	dcat:landingPage <http://rdf.biosemantics.org/> ;
+	dcterms:issued "2016-10-27"^^xsd:dateTime ;
+	dcterms:modified "2017-02-21T09:37:34.279Z"^^xsd:dateTime ;
+	dcat:theme <http://dbpedia.org/resource/Text_mining> , <http://semanticscience.org/resource/statistical-association> ;
+	dcat:keyword "GDA lumc" , "gene-disease association" , "text mining" ;
+	dcat:distribution <http://fdp-demo.fair-dtls.surf-hosted.nl/fdp/distribution/gda-lumc-sparql> .
+
