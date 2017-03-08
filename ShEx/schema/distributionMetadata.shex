@@ -19,8 +19,11 @@ PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/>
   fdp-o:metadataIssued xsd:dateTime;
   fdp-o:metadataModified xsd:dateTime;    
   dcterms:issued xsd:dateTime;
-  dcat:mediaType xsd:string+;                              
+  dcat:mediaType xsd:string+;  
+  dcat:format xsd:string*;
+  dcat:byteSize xsd:decimal*;                            
   dcterms:modified xsd:dateTime*;
+  dcterms:rights IRI*; 
   dcterms:license IRI;
   (dcat:downloadURL IRI | dcat:accessURL IRI);         
   fdp-o:metadataIdentifier @:metadataID             
