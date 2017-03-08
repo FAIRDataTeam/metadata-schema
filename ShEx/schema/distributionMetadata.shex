@@ -13,6 +13,7 @@ PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/>
 :distribution IRI { 
   a [dcat:Distribution];
   dcterms:title	xsd:string;
+  dcterms:language IRI*;
   dcterms:description xsd:string*; 
   dcterms:isPartOf IRI*;              
   rdfs:label xsd:string*;
