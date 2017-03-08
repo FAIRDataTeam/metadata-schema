@@ -19,7 +19,7 @@ PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/>
   dcterms:hasVersion xsd:string;
   fdp-o:metadataIssued xsd:dateTime;
   fdp-o:metadataModified xsd:dateTime;    
-  dcterms:issued xsd:dateTime;
+  dcterms:issued xsd:dateTime*;
   dcat:mediaType xsd:string+;  
   dcat:format xsd:string*;
   dcat:byteSize xsd:decimal*;                            
