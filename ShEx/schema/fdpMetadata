@@ -11,33 +11,46 @@ PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 
-:dataset IRI { 
-  a [dcat:Dataset];
+:fdpMetadata IRI { 
+  a [r3d:Repository];
   dcterms:title	xsd:string; 
-  dcterms:description xsd:string*;
-  dcterms:isPartOf IRI*;              
+  dcterms:isPartOf IRI*;    
+  dcterms:description xsd:string*;              
   rdfs:label xsd:string*;
   dcterms:hasVersion xsd:string;
   fdp-o:metadataIssued xsd:dateTime;
   fdp-o:metadataModified xsd:dateTime;    
   dcterms:issued xsd:dateTime*;
   dcterms:language IRI*;
-  dcterms:conformsTo IRI*;
   dcterms:publisher @:agent+;
   dcterms:rights IRI*;              
-  dcat:landingPage IRI*;
-  dcat:theme IRI+;
-  dcat:keyword xsd:string*;               
+  foaf:homepage IRI*;            
   dcterms:modified xsd:dateTime*;
-  dcterms:license IRI*;  
-  dcat:distribution IRI*;              
-  fdp-o:metadataIdentifier @:metadataID             
+  dcterms:license IRI*;
+  dcterms:alternative xsd:string*;
+  dcterms:conformsTo IRI*;              
+  r3d:dataCatalog IRI*; 
+  r3d:institution IRI*;
+  r3d:repositoryContact @:agent*;   
+  r3d:repositoryType IRI*;
+  r3d:startDate  xsd:dateTime*;
+  r3d:repositoryLanguage IRI*;
+  r3d:api IRI*;
+  r3d:certificate IRI*;              
+  rdfs:seeAlso IRI*;              
+  fdp-o:metadataIdentifier @:metadataID; 
+  r3d:repositoryIdentifier @:repositoryID              
 }
 
 :metadataID IRI {
   dcterms:identifier xsd:string
 
 } 
+
+:repositoryID IRI {
+  dcterms:identifier xsd:string
+
+}
 
 :agent IRI {
   a IRI;

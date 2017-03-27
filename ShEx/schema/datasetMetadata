@@ -8,31 +8,38 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX fdp-o: <http://rdf.biosemantics.org/ontologies/fdp-o#> 
 PREFIX r3d: <http://www.re3data.org/schema/3-0#> 
 PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 
-:distribution IRI { 
-  a [dcat:Distribution];
-  dcterms:title	xsd:string;
-  dcterms:language IRI*;
-  dcterms:description xsd:string*; 
+:datasetMetadata IRI { 
+  a [dcat:Dataset];
+  dcterms:title	xsd:string; 
+  dcterms:description xsd:string*;
   dcterms:isPartOf IRI*;              
   rdfs:label xsd:string*;
   dcterms:hasVersion xsd:string;
   fdp-o:metadataIssued xsd:dateTime;
   fdp-o:metadataModified xsd:dateTime;    
   dcterms:issued xsd:dateTime*;
-  dcat:mediaType xsd:string+;  
-  dcat:format xsd:string*;
-  dcat:byteSize xsd:decimal*;                            
-  dcterms:modified xsd:dateTime*;
-  dcterms:rights IRI*; 
+  dcterms:language IRI*;
   dcterms:conformsTo IRI*;
-  dcterms:license IRI;
-  (dcat:downloadURL IRI | dcat:accessURL IRI);         
+  dcterms:publisher @:agent+;
+  dcterms:rights IRI*;              
+  dcat:landingPage IRI*;
+  dcat:theme IRI+;
+  dcat:keyword xsd:string*;               
+  dcterms:modified xsd:dateTime*;
+  dcterms:license IRI*;  
+  dcat:distribution IRI*;              
   fdp-o:metadataIdentifier @:metadataID             
 }
 
 :metadataID IRI {
   dcterms:identifier xsd:string
 
+} 
+
+:agent IRI {
+  a IRI;
+  foaf:name xsd:string*
 } 

@@ -11,8 +11,8 @@ PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 
-:fdp IRI { 
-  a [r3d:Repository];
+:catalogMetadata IRI { 
+  a [dcat:Catalog];
   dcterms:title	xsd:string; 
   dcterms:isPartOf IRI*;    
   dcterms:description xsd:string*;              
@@ -22,35 +22,21 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
   fdp-o:metadataModified xsd:dateTime;    
   dcterms:issued xsd:dateTime*;
   dcterms:language IRI*;
+  dcterms:conformsTo IRI*;
   dcterms:publisher @:agent+;
   dcterms:rights IRI*;              
-  foaf:homepage IRI*;            
+  foaf:homepage IRI*;
+  dcat:themeTaxonomy IRI+;             
   dcterms:modified xsd:dateTime*;
-  dcterms:license IRI*;
-  dcterms:alternative xsd:string*;
-  dcterms:conformsTo IRI*;              
-  r3d:dataCatalog IRI*; 
-  r3d:institution IRI*;
-  r3d:repositoryContact @:agent*;   
-  r3d:repositoryType IRI*;
-  r3d:startDate  xsd:dateTime*;
-  r3d:repositoryLanguage IRI*;
-  r3d:api IRI*;
-  r3d:certificate IRI*;              
-  rdfs:seeAlso IRI*;              
-  fdp-o:metadataIdentifier @:metadataID; 
-  r3d:repositoryIdentifier @:repositoryID              
+  dcterms:license IRI*;  
+  dcat:dataset IRI*;              
+  fdp-o:metadataIdentifier @:metadataID             
 }
 
 :metadataID IRI {
   dcterms:identifier xsd:string
 
 } 
-
-:repositoryID IRI {
-  dcterms:identifier xsd:string
-
-}
 
 :agent IRI {
   a IRI;
