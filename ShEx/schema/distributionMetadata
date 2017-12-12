@@ -27,6 +27,7 @@ PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/>
   dcterms:modified xsd:dateTime*;
   dcterms:rights IRI*; 
   dcterms:conformsTo IRI*;
+  dcterms:publisher @:agent+;
   dcterms:license IRI;
   (dcat:downloadURL IRI | dcat:accessURL IRI);         
   fdp-o:metadataIdentifier @:metadataID             
@@ -36,3 +37,8 @@ PREFIX lang: <http://id.loc.gov/vocabulary/iso639-1/>
   dcterms:identifier xsd:string
 
 } 
+
+:agent IRI {
+  a IRI;
+  foaf:name xsd:string*
+}
