@@ -1,5 +1,5 @@
 ### Summary 
-This repository contains [ShEx](http://shex.io/) expressions for the [FAIR Data Point](https://github.com/DTL-FAIRData/FAIRDataPoint) (FDP) data model. The ShEx expressions are generated according to the [FAIR Data Point software specification](https://github.com/DTL-FAIRData/FAIRDataPoint/wiki/FAIR-Data-Point-Specification) document.
+In the current implementation we use [ShEx](http://shex.io/) expression to represent the [FAIR Data Point](https://github.com/DTL-FAIRData/FAIRDataPoint) (FDP) data model. The ShEx expressions are generated according to the [FAIR Data Point software specification](https://github.com/DTL-FAIRData/FAIRDataPoint/wiki/FAIR-Data-Point-Specification) document.
 
 #### How to use
 
