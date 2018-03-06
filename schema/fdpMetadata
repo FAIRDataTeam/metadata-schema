@@ -35,7 +35,8 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
   r3d:startDate  xsd:dateTime*;
   r3d:repositoryLanguage IRI*;
   r3d:api IRI*;
-  r3d:certificate IRI*;             
+  r3d:certificate IRI*; 
+  r3d:country IRI*;            
   fdp-o:metadataIdentifier @:metadataID; 
   r3d:repositoryIdentifier @:repositoryID              
 }
