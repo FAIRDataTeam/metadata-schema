@@ -30,7 +30,8 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
   dcat:keyword xsd:string*;               
   dcterms:modified xsd:dateTime*;
   dcterms:license IRI*;  
-  dcat:distribution IRI*;              
+  dcat:distribution IRI*;  
+  dcat:contactPoint IRI*;            
   fdp-o:metadataIdentifier @:metadataID             
 }
 
